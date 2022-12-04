@@ -3,114 +3,36 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-  background-color: #222;
-  padding: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.App-link {
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-a {
-  color: #61DAFB
-}
-
-.project-description {
-  max-width: 850px;
-  margin: auto;
-  text-align: left;
-  line-height: 1.3em;
-}
-
-.project-details {
-  margin: 20px 0px 10px;
-}
-
-.project-details ul {
-  display: inline;
-  padding-left: 0px;
-}
-
-.project-details ul li {
-  display: inline;
-  font-weight: bold;
-  position: relative;
-  margin-right: 30px;
-}
-
-.project-links {
-  float: right;
-}
-
-.project-links a {
-  display: inline-block;
-  position: relative;
-  margin-left: 30px;
-}
-
-@media (max-width: 660px) {
-  .project-links {
-    float: unset;
-    display: block;
-    margin-top: 10px;
+  from {
+    transform: rotate(0deg);
   }
-
-  .project-links a:first-child {
-    margin-left: 0px;
+  to {
+    transform: rotate(360deg);
   }
-}
-
-
-.project-details ul li:not(:first-child):before,
-.project-links a:not(:first-child):before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -17px;
-  top: 6px;
-  height: 4px;
-  width: 4px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-
-.image-wrap {
-  padding: 20px 0px;
-}
-
-.spinner {
-  border: 1px dashed #ccc;
-  border-radius: 5px;
-  padding: 100px;
-  margin: 0px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.controls button {
-  margin: 5px;
-}
-
-.current-width {
-  padding-right: 30px;
-}
-
-.target-width input {
-  width: 40px;
 }
